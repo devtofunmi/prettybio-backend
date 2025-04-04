@@ -5,6 +5,10 @@ import User from "../models/users";
 
 const router = express.Router();
 
+router.get("/", (_req, res) => {
+  res.send("PrettyBio Backend is running 🎉");
+});
+
 // Signup
 router.post("/signup", async (req: Request, res: Response):Promise<any> => {
   try {
